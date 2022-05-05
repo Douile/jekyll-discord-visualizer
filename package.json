@@ -1,0 +1,17 @@
+{
+  "name": "jekyll-discord-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This Jekyll pluging provides a tag that takes a Youtube URL and generates a (responsive) html snippet to embed the video into your site.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Douile",
+  "license": "MIT",
+  "dependencies": {
+    "discord-visualizer": "^0.1.3"
+  }
+}
