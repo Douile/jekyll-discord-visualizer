@@ -15,9 +15,10 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         += 'ext/npm.rb'
   spec.require_paths = ["lib","ext"]
 
-  spec.extensions << 'ext/npm.rb'
+  spec.extensions    << 'ext/npm.rb'
 
   spec.add_dependency 'jekyll'
   spec.add_dependency 'open3'
