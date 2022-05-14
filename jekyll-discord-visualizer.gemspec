@@ -17,10 +17,9 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
 
-  spec.extensions    = ["rake install"]
+  spec.extensions    = ["extconf.rb"]
 
   spec.add_dependency 'jekyll'
   spec.add_dependency 'open3'
   spec.add_development_dependency "bundler", "~> 2.1"
-  spec.add_development_dependency "rake", "~> 10.0"
 end
