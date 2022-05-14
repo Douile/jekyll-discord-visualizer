@@ -1,7 +1,7 @@
-require "open3"
-
-status_list = Open3.pipeline([{"NODE_ENV"=>"production"}, "npm", "ci"], ["node", "--version"])
-
-raise "Unable to install dependencies, check you have npm and nodejs installed" if status_list.any? { |x| x != 0 }
-
-File.write("Makefile", "")
+File.write("Makefile", 
+"all:
+\techo \"Checking node is installed...\"
+\tnode --version
+\techo \"Installing npm dependencies...\"
+\tnpm install
+")
